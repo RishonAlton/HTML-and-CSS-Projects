@@ -1,0 +1,130 @@
+:root {
+  --gray-050: hsl(210, 20%, 98%);
+  --gray-100: hsl(220, 14%, 96%);
+  --gray-200: hsl(220, 13%, 91%);
+  --gray-300: hsl(216, 12%, 84%);
+  --gray-400: hsl(218, 11%, 65%);
+  --gray-500: hsl(220, 9%, 46%);
+  --gray-600: hsl(215, 14%, 34%);
+  --gray-700: hsl(217, 19%, 27%);
+  --gray-800: hsl(215, 28%, 17%);
+  --gray-900: hsl(221, 39%, 11%);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+body::before {
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), url(./Image.jpeg) center/cover no-repeat fixed;
+}
+
+#title {
+  font-weight: lighter;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+#description {
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+#form-container {
+  margin: 2.5rem auto;
+  background: rgba(27, 27, 50, 0.8);
+  text-align: start;
+  padding: 2.5rem;
+  font-size: 1.25rem;
+  width: 90vw;
+  max-width: 750px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.text,
+#dropdown,
+#favorite-feature {
+  margin-bottom: 35px;
+  padding: 0.8rem;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: transparent;
+  font-size: 1rem;
+  color: var(--gray-700);
+}
+
+::placeholder {
+  color: var(--gray-500);
+}
+
+fieldset {
+  margin-bottom: 35px;
+  padding: 0.8rem;
+}
+
+legend {
+  margin-bottom: 10px;
+}
+
+fieldset > label {
+  display: inline-block;
+}
+
+#comments {
+  width: 100%;
+  height: 120px;
+  padding: 0.8rem;
+  color: var(--gray-700);
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+  border-radius: 5px;
+  border: transparent;
+  margin-bottom: 35px;
+}
+
+#comments::placeholder {
+  color: var(--gray-500);
+}
+
+#submit {
+  cursor: pointer;
+  border: transparent;
+  background: rgb(55, 175, 101);
+  color: white;
+  width: 100%;
+  height: 45px;
+  font-size: 1rem;
+  transition: all 300ms;
+  border-radius: 5px;
+}
+
+#submit:hover {
+  background: rgba(55, 174, 101, 0.8);
+}

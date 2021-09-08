@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>YouTube Clone</title>
+</head>
+<body>
+    <nav>
+        <div id="youtube-logo-container">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAABDCAMAAACRDGoDAAAAllBMVEX/////AAAAAAAjIyMeHh4YGBg/Pz++vr4WFhZubm7ExMQbGxvm5ubCwcH/gIB5eXn/fHx0c3NSUlL/dHQPDw9XV1dMTEza2touLi45OTn/7+//iYn/3t6jo6NmZmb/09Py8vLOzs7/vr7/ra3/oKD/k5P/Ojr/Dw//UFCUlJT+t7ezs7P/SEj/Kir/XFz/MzOIiIj/yMgyVAqaAAADAklEQVRYhe2X7XaiMBCG00nQYFCEDaBWEPqxLWW7pfd/czszVGsrdmHbnv2T9088Q5gnJPMRhXBycnJycnJycvp6bba7q+ub28vFcrn8QcJxcXl7c321226+jfr88+ID3d1vP+O8isKo7H1y+xGVdcXz0jitaWzTOO7zk6O9Uzp7tU5BQ9A3fftX7MUF77Vv9YpG6dmoz1ENShmUUtAcc2U/dzGA+0ATG/SAQ4nDtJ8LoKTUOAzh/hrAXdLEAD1UQsxwKPsclWUpJsrz8ceR9Sz3cQD3N89Mlc3xs6zpPV4Wc9/oHHfzlnDXy33iqa31CiESY+uv517uepOKp85ATUS5UpChuxhAhiVacz/C1WSFX2R7bu77L6aKueV0DSuOiSBagU3o57twXghxfY4ryEXA0ZWD8ayyCsE+eEBr8mC250aYO51pTlyvBi0VfXVgrQHPUFzuTrhicxriHTcxUDVAkQPSJLmWtkWIltBF24EbsqlCE3MltIknKTYiq9ZNYtS6l4ubcP+O2xXL3Nq81pgluaWYbrXUQ7i2EaWR9EBTCmZ84s99XCEeHnu4AXhhYfClSONJc0IHA7i0w2ulUiZmXACqc1whnk65+PZampQyCr2IOTsYxo1pcyvmCraP+V5iSN2Se8rhjjWMi4e64kkddzrqfLsgqY658zFc3CBbN409wz0bz3Q0XKP/nSuxehtKpDH5K8SKD/YTXBUnKGyUJ/XqqQd74K6VScSnzndfM0fU51duF8+zEfGMb0z28ZwFVF+H96NXbuGNz198MXuJZ6DYHNx/j7hdvaotue8gzSm3OXAzLMxSh0JwJIuOPvi+ccTF5qD93Egb8ho8v6ZIPXDJVLCJuUq2E8NEX2N9xs2ifjL4fsXxrC03/RAU9SNd0hoU3m3ywhJ3ra2/N9W+Za5RIRipJa9XK4v9iO9BQ++TpCKJw65FTABsxME5NaBqkccpHpqfxC2ZFKi8M1UpWrCZpDw3wOVBMu+cfev9+UP9n/8LTk5OTk5OTk5OX6c/SwpB6mUfN3YAAAAASUVORK5CYII=" alt="YouTube" id="youtube-logo">
+        </div>
+        <input type="text" placeholder="Search" id="search-bar">
+        <div id="icon-container">
+            <i class="material-icons" id="app-icon">&#xe5c3;</i>
+            <i class="fas fa-bell"></i>
+        </div>
+    </nav>
+    <section id="side-bar-section">
+        <div>
+            <ul class="side-bar">
+                <li id="active-title">
+                    <i class="material-icons" id="home-icon">&#xe88a;</i>
+                    <a href="#" class="side-bar-titles active">Home</a>
+                </li>
+                <li>
+                    <i class="material-icons">&#xe87a;</i>
+                    <a href="#" class="side-bar-titles">Explore</a>
+                </li>
+                <li>
+                    <i class="material-icons">&#xe064;</i>
+                    <a href="#" class="side-bar-titles">Subscriptions</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="side-bar">
+                <li>
+                    <i class="material-icons">&#xe04a;</i>
+                    <a href="#" class="side-bar-titles">Library</a>
+                </li>
+                <li>
+                    <i class="material-icons">&#xe889;</i>
+                    <a href="#" class="side-bar-titles">History</a>
+                </li>
+                <li>
+                    <i class="material-icons">&#xe63a;</i>
+                    <a href="#" class="side-bar-titles">Your videos</a>
+                </li>
+                <li>
+                    <i class="fas fa-clock"></i>
+                    <a href="#" class="side-bar-titles">Watch later</a>
+                </li>
+                <li>
+                    <i class='fas fa-thumbs-up'></i>
+                    <a href="#" class="side-bar-titles">Liked videos</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p class="side-bar-heading">SUBSCRIPTIONS</p>
+            <ul class="side-bar">
+                <li>
+                    <div class="channel-dp-container-1">
+                        <img src="https://images.pexels.com/photos/3265774/pexels-photo-3265774.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-1">
+                    </div>
+                    <a href="#" class="side-bar-titles">Ania Palmer</a>
+                </li>
+                <li>
+                    <div class="channel-dp-container-1">
+                        <img src="https://images.pexels.com/photos/4480454/pexels-photo-4480454.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-1">
+                    </div>
+                    <a href="#" class="side-bar-titles">The Puzzle World</a>
+                </li>
+                <li>
+                    <div class="channel-dp-container-1">
+                        <img src="https://images.pexels.com/photos/7038052/pexels-photo-7038052.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-1">
+                    </div>
+                    <a href="#" class="side-bar-titles">Sports Daily</a>
+                </li>
+                <li>
+                    <div class="channel-dp-container-1">
+                        <img src="https://images.pexels.com/photos/7461474/pexels-photo-7461474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-1">
+                    </div>
+                    <a href="#" class="side-bar-titles">Rick Sorkin</a>
+                </li>
+                <li>
+                    <div class="channel-dp-container-1">
+                        <img src="https://images.pexels.com/photos/4969918/pexels-photo-4969918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-1">
+                    </div>
+                    <a href="#" class="side-bar-titles">Android Daily</a>
+                </li>
+                <li>
+                    <div class="channel-dp-container-1">
+                        <img src="https://images.pexels.com/photos/5225228/pexels-photo-5225228.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-1">
+                    </div>
+                    <a href="#" class="side-bar-titles">Mike Miller</a>
+                </li>
+                <li>
+                    <div class="channel-dp-container-1">
+                        <img src="https://images.pexels.com/photos/5428550/pexels-photo-5428550.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-1">
+                    </div>
+                    <a href="#" class="side-bar-titles">Best Tips</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p class="side-bar-heading">MORE FROM YOUTUBE</p>
+            <ul class="side-bar">
+                <li>
+                    <i class='fab fa-youtube'></i>
+                    <a href="#" class="side-bar-titles">YouTube Premium</a>
+                </li>
+                <li>
+                    <i class="material-icons">&#xe54d;</i>
+                    <a href="#" class="side-bar-titles">Films</a>
+                </li>
+                <li>
+                    <i class="fa fa-gamepad"></i>
+                    <a href="#" class="side-bar-titles">Gaming</a>
+                </li>
+                <li>
+                    <i class="material-icons">&#xe639;</i>
+                    <a href="#" class="side-bar-titles">Live</a>
+                </li>
+                <li>
+                    <i class='fas fa-lightbulb'></i>
+                    <a href="#" class="side-bar-titles">Learning</a>
+                </li>
+                <li>
+                    <i class='fas fa-trophy'></i>
+                    <a href="#" class="side-bar-titles">Sport</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="side-bar">
+                <li>
+                    <i class="material-icons">&#xe8b8;</i>
+                    <a href="#" class="side-bar-titles">Settings</a>
+                </li>
+                <li>
+                    <i class='fas fa-flag'></i>
+                    <a href="#" class="side-bar-titles">Report history</a>
+                </li>
+                <li>
+                    <i class="material-icons">&#xe887;</i>
+                    <a href="#" class="side-bar-titles">Help</a>
+                </li>
+                <li>
+                    <i class="material-icons">&#xe87f;</i>
+                    <a href="#" class="side-bar-titles">Send feedback</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <main id="video-section">
+        <div class="video-container">
+            <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="image-1" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://images.pexels.com/photos/4969918/pexels-photo-4969918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">Top 5 Android 12 Features</a>
+                    <a href="#" class="channel-name">Android Daily</a>
+                    <a href="#" class="views">2M views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">1 week ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="image-2" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://images.pexels.com/photos/5225228/pexels-photo-5225228.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">The 10 BEST Shows of 2021!</a>
+                    <a href="#" class="channel-name">Mike Miller</a>
+                    <a href="#" class="views">1K views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">2 months ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://images.pexels.com/photos/5702341/pexels-photo-5702341.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="image-3" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://images.pexels.com/photos/4969918/pexels-photo-4969918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">5 New Features of YouTube</a>
+                    <a href="#" class="channel-name">Android Daily</a>
+                    <a href="#" class="views">2.7K views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">5 days ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://images.pexels.com/photos/34407/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="image-4" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://images.pexels.com/photos/5428550/pexels-photo-5428550.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">How To Improve Your YouTube Recommendations</a>
+                    <a href="#" class="channel-name">Best Tips</a>
+                    <a href="#" class="views">3K views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">3 days ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="image-5" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://images.pexels.com/photos/7461474/pexels-photo-7461474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">Rick Sorkin - Your Eyes (Official Video)</a>
+                    <a href="#" class="channel-name">Rick Sorkin</a>
+                    <a href="#" class="views">5M views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">1 year ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://images.pexels.com/photos/320617/pexels-photo-320617.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="image-6" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://images.pexels.com/photos/6966565/pexels-photo-6966565.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">15 Photography Tips for Beginners</a>
+                    <a href="#" class="channel-name">Photography World</a>
+                    <a href="#" class="views">506 views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">5 weeks ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://images.pexels.com/photos/7224953/pexels-photo-7224953.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="image-7" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://images.pexels.com/photos/7367082/pexels-photo-7367082.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">David Scott - Another Year (Official Lyric Video)</a>
+                    <a href="#" class="channel-name">David Scott</a>
+                    <a href="#" class="views">500K views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">1 month ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://images.pexels.com/photos/46798/the-ball-stadion-football-the-pitch-46798.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="image-8" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://images.pexels.com/photos/7038052/pexels-photo-7038052.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">5 Popular Sports Right Now</a>
+                    <a href="#" class="channel-name">Sports Daily</a>
+                    <a href="#" class="views">2K views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">5 weeks ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://images.pexels.com/photos/458379/pexels-photo-458379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="image-9" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://images.pexels.com/photos/4480454/pexels-photo-4480454.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">Puzzles - Official Trailer (HD)</a>
+                    <a href="#" class="channel-name">The Puzzle World</a>
+                    <a href="#" class="views">2M views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">2 months ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://images.pexels.com/photos/7364277/pexels-photo-7364277.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="image-10" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://images.pexels.com/photos/3265774/pexels-photo-3265774.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">Ania Palmer - Changes (Official Video)</a>
+                    <a href="#" class="channel-name">Ania Palmer</a>
+                    <a href="#" class="views">1M views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">5 months ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://images.pexels.com/photos/4615139/pexels-photo-4615139.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="image-11" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://images.pexels.com/photos/6389819/pexels-photo-6389819.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">Rachel Spectre - Footsteps (Official Video)</a>
+                    <a href="#" class="channel-name">Rachel Spectre</a>
+                    <a href="#" class="views">2M views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">11 months ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" id="image-12" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="https://images.pexels.com/photos/4969918/pexels-photo-4969918.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">Top 5 Android 11 Features</a>
+                    <a href="#" class="channel-name">Android Daily</a>
+                    <a href="#" class="views">3M views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">1 year ago</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>This project is a cloned work and a recreation of YouTube's design</p>
+    </footer>
+</body>
+</html>
